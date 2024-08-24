@@ -14,8 +14,12 @@ const candidateModel = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    password: {
+      type: String,
+      required: true,
+    },
     phoneNumber: {
-      type: Number,
+      type: String,
       required: true,
       unique: true,
     },
