@@ -20,6 +20,6 @@ router.get("/logout", logout);
 
 // Route to update the profile of a candidate or recruiter
 // Protected route, requires authentication
-router.post("/profile/update", isAuthenticated, updateProfile);
+router.put("/profile/update", isAuthenticated, updateProfile);
 
 module.exports = router;

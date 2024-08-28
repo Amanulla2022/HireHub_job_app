@@ -5,6 +5,8 @@ const connectToDB = require("./config/connectDB");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const candidateRoutes = require("./routes/candidateRoutes");
+const companyRoutes = require("./routes/companyRoutes");
+const jobRoutes = require("./routes/jobRoutes");
 
 // config the .env file
 dotenv.config();
@@ -23,6 +25,8 @@ app.use(cookieParser());
 
 // api's
 app.use("/api/v1/person", candidateRoutes);
+app.use("/api/v1/company", companyRoutes);
+app.use("/api/v1/job", jobRoutes);
 
 // starting the server
 app.listen(PORT, () => {

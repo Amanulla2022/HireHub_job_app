@@ -11,7 +11,7 @@ const jobModel = new mongoose.Schema(
     },
     description: {
       type: String,
-      required: String,
+      required: true,
     },
     requirements: [
       {
@@ -26,6 +26,10 @@ const jobModel = new mongoose.Schema(
       type: String,
     },
     jobType: {
+      type: String,
+      required: true,
+    },
+    experience: {
       type: String,
       required: true,
     },
