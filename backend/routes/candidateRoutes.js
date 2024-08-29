@@ -18,7 +18,7 @@ router.post("/login", login);
 // GET Route to logout a candidate or recruiter
 router.get("/logout", logout);
 
-// Route to update the profile of a candidate or recruiter
+// PUT Route to update the profile of a candidate or recruiter
 // Protected route, requires authentication
 router.put("/profile/update", isAuthenticated, updateProfile);
 

@@ -7,6 +7,7 @@ const cookieParser = require("cookie-parser");
 const candidateRoutes = require("./routes/candidateRoutes");
 const companyRoutes = require("./routes/companyRoutes");
 const jobRoutes = require("./routes/jobRoutes");
+const applicationRoutes = require("./routes/applicationRoutes");
 
 // config the .env file
 dotenv.config();
@@ -27,6 +28,7 @@ app.use(cookieParser());
 app.use("/api/v1/person", candidateRoutes);
 app.use("/api/v1/company", companyRoutes);
 app.use("/api/v1/job", jobRoutes);
+app.use("/api/v1/application", applicationRoutes);
 
 // starting the server
 app.listen(PORT, () => {
