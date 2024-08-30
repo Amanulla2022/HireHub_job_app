@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* flex */
+.flex-item {
+  @apply flex items-center;
+}
+
+/* navbar */
+.list-item {
+  @apply text-sm sm:text-base;
+}
+
+.login-signup {
+  @apply p-2 rounded-xl hover:underline;
+}
+
+.button-div {
+  @apply flex w-full;
+}
+
+.buttons {
+  @apply flex items-center gap-2 w-full justify-start hover:underline p-2 rounded;
+}
+
+.buttons-icon {
+  @apply text-2xl;
+}
+
+/* signup and login */
+.form-sub-div {
+  @apply my-2 flex flex-col items-start;
+}
+
+.form-inputs {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}

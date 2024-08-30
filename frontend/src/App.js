@@ -1,7 +1,12 @@
 import "./App.css";
+import Layout from "./Layout";
 
 function App() {
-  return <>It's front end for HireHub App!!!</>;
+  return (
+    <>
+      <Layout />
+    </>
+  );
 }
 
 export default App;
