@@ -15,8 +15,13 @@ dotenv.config();
 // port
 const PORT = process.env.PORT_URL || 8000;
 
+const corsOptions = {
+  origin: "http://localhost:3000", // Allow only your frontend URL
+  credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+};
+
 // Enable Cross-Origin Resource Sharing (CORS) to allow requests from different origins
-app.use(cors());
+app.use(cors(corsOptions));
 
 // middleware
 app.use(express.json());
